@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pat's Interference - Sticker</title>
 
     <style>
@@ -13,16 +16,16 @@
             color: #222;
         }
 
-        .sticker-image {
-            width: 150px;
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px;
-        }
-
         h1 {
             font-size: 32px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .sticker-image {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 10px;
         }
 
         .price {
@@ -70,19 +73,27 @@
 
 <body>
 
-    <h1>Sticker</h1>
+    <h1>Pat's Interference</h1>
 
-    <img src="sticker.jpg" alt="Sticker" style="width:150px;height:150px;object-fit:contain;">
+    <img
+        src="sticker.jpg"
+        alt="Pat's Interference Sticker"
+        class="sticker-image"
+    >
 
     <div class="price">
         $5 — Shipping included
     </div>
 
-    <a class="buy-button" href="https://venmo.com/u/PatrickNorwood?txn=pay&amount=5&note=Sticker%20purchase">
+    <a
+        class="buy-button"
+        href="https://venmo.com/u/PatrickNorwood?txn=pay&amount=5&note=Sticker%20purchase"
+    >
         BUY STICKER — $5
     </a>
 
     <div class="nonprofit">
+
         <h2>Where Your Purchase Goes</h2>
 
         <p>
@@ -98,15 +109,18 @@
         </p>
 
         <p>
-            <a href="https://thedysautonomiaproject.org/dysautonomia/" target="_blank">
+            <a
+                href="https://thedysautonomiaproject.org/dysautonomia/"
+                target="_blank"
+            >
                 Learn more about dysautonomia →
             </a>
         </p>
+
     </div>
 
 </body>
 </html>
-
 
 
 
